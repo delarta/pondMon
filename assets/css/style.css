@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root{
+    --light-green : #5ff59e;
+    --light-blue : rgb(5, 209, 191);
+    --mid-blue : #0195cc;
+    --blue: rgb(4, 112, 183);
+    --dark-blue: #004481;
+    --light: #e7e7e7;
+}
+
+*, h1, h2, h3, h4, a{
+    font-family: 'Montserrat', sans-serif !important; 
+}
+
+body{
+    background: url('/assets/img/wave.png');
+    background-position: -200px 75vh;
+    background-color: var(--dark-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.uk-navbar-item.uk-logo{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.uk-navbar-container.uk-margin{
+    background: var(--dark-blue);
+}
+
+.uk-navbar-container.uk-margin a{
+    color: #f4f4f4 !important;
+}
+
+.uk-card.uk-card-default.uk-card-hover.uk-card-body{
+    background: var(--blue);
+    color: #f4f4f4 !important;
+}
+
+.card{
+    background: var(--blue);
+    padding: 2em 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px  rgba(13, 63, 97, 0.7);
+}
+
+.card h1{
+    font-size: 4rem;
+    font-weight: 800;
+    transition: ease-out 200ms
+
+}
+
+.card h1:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+}
+
+.card-title{
+    color: #f4f4f4;
+    font-weight: 700;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.uk-table th {
+    text-align: left;
+}
+
+@media (max-width:800px){
+    .home-grid{
+        grid-template-columns: 1fr;
+    }
+}

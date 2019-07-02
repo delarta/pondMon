@@ -1,0 +1,62 @@
+<html lang="en">
+  <!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pond Monitoring App</title>
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+      <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="#"
+          >Aquaculture Water Monitoring System</a
+        >
+      </div>
+    </nav>
+    <div class="uk-container">
+      <div class="home-grid">
+        <div>
+          <div class="card">
+            <h3 class="card-title">Oksigen Terlarut</h3>
+            <h1 id="oxyg-home">44</h1>
+            <canvas id="oxygChart" width="100%" height="100"></canvas>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="card-title">Suhu</h3>
+            <h1 id="temp-home">20</h1>
+            <canvas id="tempChart" width="100%" height="100"></canvas>
+            
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="card-title">Keasaman</h3>
+            <h1 id="acid-home">78</h1>
+            <canvas id="acidChart" width="100%" height="100"></canvas>
+
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="card-title">Kekeruhan</h3>
+            <h1 id="turb-home">32</h1>
+            <canvas id="turbChart" width="100%" height="100"></canvas>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
